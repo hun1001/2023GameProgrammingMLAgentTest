@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerAttack : PlayerAction
 {
     [SerializeField]
+    private StatusCanvasController _statusCanvasController = null;
+
+    [SerializeField]
     private HitBoxController _hitBoxController = null;
 
     private bool _isAttacking = false;
@@ -24,6 +27,7 @@ public class PlayerAttack : PlayerAction
         _isAttacking = true;
         Animator.AttackAnimation();
         _hitBoxController.EnableHitBox(0.1f, 0.25f);
+        StartCoroutine(UpdateAttackDelayUICoroutine(2.0f));
         StartCoroutine(AttackCoroutine());
     }
 
@@ -31,5 +35,17 @@ public class PlayerAttack : PlayerAction
     {
         yield return new WaitForSeconds(2.0f);
         _isAttacking = false;
+    }
+
+    private IEnumerator UpdateAttackDelayUICoroutine(float delay)
+    {
+        float cd = delay;
+
+        while (cd > 0f)
+        {
+            cd -= Time.deltaTime;
+            _statusCanvasController.SetDelayBar(cd, delay);
+            yield return null;
+        }
     }
 }

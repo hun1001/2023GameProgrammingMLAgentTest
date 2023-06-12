@@ -17,7 +17,7 @@ public class PlayerInputController : MonoBehaviour
     private Action _onAttackInput = null;
     public Action OnAttackInput { set => _onAttackInput = value; }
 
-    private void Update()
+    protected virtual void Update()
     {
         _horizontalInput = Input.GetAxis("Horizontal");
         _verticalInput = Input.GetAxis("Vertical");
