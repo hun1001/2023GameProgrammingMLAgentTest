@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
@@ -17,8 +15,24 @@ public class PlayerInputController : MonoBehaviour
     private Action _onAttackInput = null;
     public Action OnAttackInput { set => _onAttackInput = value; }
 
-    protected virtual void Update()
+    private Action<Vector3> _onMousePositionInput = null;
+    public Action<Vector3> OnMousePositionInput { set => _onMousePositionInput = value; }
+
+    [SerializeField]
+    private bool _isUserInputEnabled = true;
+
+    public void DisableUserInput()
     {
+        _isUserInputEnabled = false;
+    }
+
+    private void Update()
+    {
+        if (!_isUserInputEnabled)
+        {
+            return;
+        }
+
         _horizontalInput = Input.GetAxis("Horizontal");
         _verticalInput = Input.GetAxis("Vertical");
 
@@ -35,5 +49,7 @@ public class PlayerInputController : MonoBehaviour
         {
             _onAttackInput?.Invoke();
         }
+
+        _onMousePositionInput?.Invoke(Input.mousePosition);
     }
 }
