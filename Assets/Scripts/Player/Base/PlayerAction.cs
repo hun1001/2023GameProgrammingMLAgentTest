@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
 {
-    private Animator _animator = null;
-    protected Animator Animator => _animator ??= transform.GetChild(0).GetComponent<Animator>();
+    private PlayerAnimation _animation = null;
+    protected PlayerAnimation Animator => _animation ??= GetComponent<PlayerAnimation>();
 
     private PlayerInputController _inputController = null;
     protected PlayerInputController InputController => _inputController ??= GetComponent<PlayerInputController>();
