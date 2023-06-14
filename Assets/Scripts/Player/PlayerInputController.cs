@@ -18,7 +18,6 @@ public class PlayerInputController : MonoBehaviour
     private Action<Vector3> _onMousePositionInput = null;
     public Action<Vector3> OnMousePositionInput { set => _onMousePositionInput = value; }
 
-    [SerializeField]
     private bool _isUserInputEnabled = true;
 
     public void DisableUserInput()

@@ -10,6 +10,8 @@ public class KnightWarriorAgent : Agent
     [SerializeField]
     private PlayerInputController _inputController = null;
 
+    private GameObject _otherPlayer = null;
+
     protected override void Awake()
     {
         _inputController.DisableUserInput();
