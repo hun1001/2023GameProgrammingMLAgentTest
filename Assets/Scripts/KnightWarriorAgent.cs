@@ -87,5 +87,7 @@ public class KnightWarriorAgent : Agent
         {
             _inputController.OnAttackInput();
         }
+
+        AddReward(-0.01f);
     }
 }
