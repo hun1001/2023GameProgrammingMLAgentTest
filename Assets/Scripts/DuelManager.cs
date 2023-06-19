@@ -11,6 +11,9 @@ public class DuelManager : MonoBehaviour
     {
         _players[0].transform.position = new Vector3(-10f, 0f, 0f);
         _players[1].transform.position = new Vector3(10f, 0f, 0f);
+
+        _players[0].GetComponent<PlayerDamaged>().HealAllHp();
+        _players[1].GetComponent<PlayerDamaged>().HealAllHp();
     }
 
     public Player GetOtherPlayer(Player player)

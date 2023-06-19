@@ -24,6 +24,7 @@ public class KnightWarriorAgent : Agent
         _otherPlayer = _duelManager.GetOtherPlayer(GetComponent<Player>());
 
         _inputController.GetComponent<PlayerDamaged>().AddOnDeadAction(EndEpisode);
+        _inputController.GetComponent<PlayerDamaged>().AddOnDamagedAction(() => AddReward(-5f));
 
         MaxStep = 10000;
     }
@@ -39,7 +40,8 @@ public class KnightWarriorAgent : Agent
         sensor.AddObservation(_otherPlayer.transform.position);
         sensor.AddObservation(transform.position);
 
-
+        sensor.AddObservation(_otherPlayer.GetComponent<PlayerDamaged>().Hp);
+        sensor.AddObservation(GetComponent<PlayerDamaged>().Hp);
     }
 
     public override void OnActionReceived(ActionBuffers actions)

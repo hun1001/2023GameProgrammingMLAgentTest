@@ -8,9 +8,13 @@ public class HitBoxController : MonoBehaviour
     [SerializeField]
     private BoxCollider _boxCollider = null;
 
+    private KnightWarriorAgent _knightWarriorAgent = null;
+    private bool _isAI = false;
+
     private void Awake()
     {
         _boxCollider.enabled = false;
+        _isAI = TryGetComponent(out _knightWarriorAgent);
     }
 
     public void EnableHitBox(float delay, float duration)
@@ -32,6 +36,11 @@ public class HitBoxController : MonoBehaviour
         if (other.TryGetComponent(out playerDamaged))
         {
             playerDamaged.Damaged(10f);
+
+            if (_isAI)
+            {
+                _knightWarriorAgent.AddReward(4.5f);
+            }
         }
     }
 }
