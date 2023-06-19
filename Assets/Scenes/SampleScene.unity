@@ -238,7 +238,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76793981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9492846, y: 0, z: 2.322544}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -254,6 +254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 479924844}
+  - component: {fileID: 479924845}
   m_Layer: 0
   m_Name: Episode
   m_TagString: Untagged
@@ -279,6 +280,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &479924845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479924843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdf282fc4eca4db448e5c159269d01c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _players:
+  - {fileID: 1114096890}
+  - {fileID: 7473780699740715362}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +441,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 22.727655
+  field of view: 33.12507
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -450,8 +466,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.38427246, y: 0.0048885406, z: -0.0020347948, w: 0.9232046}
-  m_LocalPosition: {x: 2.9492846, y: 25, z: -22.677456}
+  m_LocalRotation: {x: 0.38385665, y: 0.0017719438, z: -0.000736603, w: 0.92339075}
+  m_LocalPosition: {x: 0, y: 25, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -509,7 +525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1602326724877873874, guid: 002dee308e014e54ab08842bf1c1b894, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.2743607
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1602326724877873874, guid: 002dee308e014e54ab08842bf1c1b894, type: 3}
       propertyPath: m_LocalPosition.y
@@ -517,7 +533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1602326724877873874, guid: 002dee308e014e54ab08842bf1c1b894, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0923176
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1602326724877873874, guid: 002dee308e014e54ab08842bf1c1b894, type: 3}
       propertyPath: m_LocalRotation.w
@@ -549,6 +565,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 002dee308e014e54ab08842bf1c1b894, type: 3}
+--- !u!114 &1114096890 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 193140904125326646, guid: 002dee308e014e54ab08842bf1c1b894, type: 3}
+  m_PrefabInstance: {fileID: 1114096889}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37642dd979771cb41b966cd24b3d6786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1398863213
 GameObject:
   m_ObjectHideFlags: 3
@@ -917,8 +944,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977978704}
-  m_LocalRotation: {x: 0.38427246, y: 0.0048885406, z: -0.0020347948, w: 0.9232046}
-  m_LocalPosition: {x: 2.9492846, y: 25, z: -22.677456}
+  m_LocalRotation: {x: 0.38385665, y: 0.0017719438, z: -0.000736603, w: 0.92339075}
+  m_LocalPosition: {x: 0, y: 25, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1730,7 +1757,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8d6c4fa7aac8e42866aa14ad891fa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isUserInputEnabled: 1
 --- !u!114 &6418294669636291691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1863,7 +1889,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7473780699740715359}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3757915, y: 0, z: 3.5527706}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1892,6 +1918,8 @@ GameObject:
   - component: {fileID: 6418294669636291702}
   - component: {fileID: 7473780699740715361}
   - component: {fileID: 7473780699740715360}
+  - component: {fileID: 7473780699740715362}
+  - component: {fileID: 7473780699740715363}
   m_Layer: 0
   m_Name: Knight Warrior_AI
   m_TagString: Player
@@ -1933,8 +1961,8 @@ MonoBehaviour:
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 0
-      BranchSizes: 01000000
-    VectorActionSize: 01000000
+      BranchSizes: 0900000002000000
+    VectorActionSize: 0900000002000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
@@ -1947,6 +1975,32 @@ MonoBehaviour:
   m_UseChildActuators: 1
   m_DeterministicInference: 0
   m_ObservableAttributeHandling: 0
+--- !u!114 &7473780699740715362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473780699740715359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37642dd979771cb41b966cd24b3d6786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7473780699740715363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473780699740715359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!4 &7523715516950265443
 Transform:
   m_ObjectHideFlags: 0
