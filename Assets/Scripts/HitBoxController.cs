@@ -42,5 +42,9 @@ public class HitBoxController : MonoBehaviour
                 _knightWarriorAgent.AddReward(4.5f);
             }
         }
+        else if (_isAI)
+        {
+            _knightWarriorAgent.AddReward(-2f);
+        }
     }
 }
