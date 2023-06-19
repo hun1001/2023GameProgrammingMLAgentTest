@@ -519,6 +519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight Warrior_AI (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3121029903173042280, guid: 9a85e118de0c2764ebd8bd12c07247fa, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 7d386db6a66bbf0499fc551c62865ce7, type: 3}
     - target: {fileID: 3121029903173540982, guid: 9a85e118de0c2764ebd8bd12c07247fa, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -969,6 +973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight Warrior_AI
       objectReference: {fileID: 0}
+    - target: {fileID: 3121029903173042280, guid: 9a85e118de0c2764ebd8bd12c07247fa, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 7d386db6a66bbf0499fc551c62865ce7, type: 3}
     - target: {fileID: 3121029903173540982, guid: 9a85e118de0c2764ebd8bd12c07247fa, type: 3}
       propertyPath: m_RootOrder
       value: 1
