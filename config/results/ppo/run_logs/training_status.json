@@ -1,0 +1,29 @@
+{
+    "Knight Warrior Behavior": {
+        "checkpoints": [
+            {
+                "steps": 281938,
+                "file_path": "results\\ppo\\Knight Warrior Behavior\\Knight Warrior Behavior-281938.onnx",
+                "reward": -99.97000861167908,
+                "creation_time": 1687316401.158803,
+                "auxillary_file_paths": [
+                    "results\\ppo\\Knight Warrior Behavior\\Knight Warrior Behavior-281938.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 281938,
+            "file_path": "results\\ppo\\Knight Warrior Behavior.onnx",
+            "reward": -99.97000861167908,
+            "creation_time": 1687316401.158803,
+            "auxillary_file_paths": [
+                "results\\ppo\\Knight Warrior Behavior\\Knight Warrior Behavior-281938.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cpu"
+    }
+}

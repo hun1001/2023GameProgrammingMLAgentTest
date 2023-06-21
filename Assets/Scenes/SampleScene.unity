@@ -969,14 +969,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight Warrior_AI
       objectReference: {fileID: 0}
-    - target: {fileID: 3121029903173042280, guid: 9a85e118de0c2764ebd8bd12c07247fa, type: 3}
-      propertyPath: m_Model
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3121029903173042280, guid: 9a85e118de0c2764ebd8bd12c07247fa, type: 3}
-      propertyPath: m_BehaviorName
-      value: Knight Warrior Behavior
-      objectReference: {fileID: 0}
     - target: {fileID: 3121029903173540982, guid: 9a85e118de0c2764ebd8bd12c07247fa, type: 3}
       propertyPath: m_RootOrder
       value: 1
