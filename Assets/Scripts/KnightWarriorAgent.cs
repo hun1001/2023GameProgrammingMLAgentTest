@@ -81,6 +81,9 @@ public class KnightWarriorAgent : Agent
                 break;
         }
 
+        Vector3 mousePosition = _otherPlayer.transform.position;
+        mousePosition.y = transform.position.y;
+
         _inputController.OnMousePositionInput(_otherPlayer.transform.position);
 
         if (attackAction == 1)
