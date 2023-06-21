@@ -23,8 +23,11 @@ public class KnightWarriorAgent : Agent
         _duelManager = FindObjectOfType<DuelManager>();
         _otherPlayer = _duelManager.GetOtherPlayer(GetComponent<Player>());
 
+        _inputController.GetComponent<PlayerDamaged>().AddOnDeadAction(() => AddReward(-5f));
         _inputController.GetComponent<PlayerDamaged>().AddOnDeadAction(EndEpisode);
         _inputController.GetComponent<PlayerDamaged>().AddOnDamagedAction(() => AddReward(-3.5f));
+
+        _otherPlayer.GetComponent<PlayerDamaged>().AddOnDeadAction(() => AddReward(10f));
 
         MaxStep = 10000;
     }
