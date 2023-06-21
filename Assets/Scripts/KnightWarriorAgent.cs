@@ -91,17 +91,6 @@ public class KnightWarriorAgent : Agent
             _inputController.OnAttackInput();
         }
 
-        float decrease = 0;
-
-        if (Vector3.Distance(transform.position, _otherPlayer.transform.position) < 0.25f)
-        {
-            decrease = -0.05f;
-        }
-        else
-        {
-            decrease = -0.01f;
-        }
-
-        AddReward(decrease);
+        AddReward(-0.01f);
     }
 }
