@@ -39,7 +39,7 @@ public class HitBoxController : MonoBehaviour
 
             if (_isAI)
             {
-                _knightWarriorAgent.AddReward(4f);
+                _knightWarriorAgent.AddReward(10f);
             }
         }
         else if (_isAI)

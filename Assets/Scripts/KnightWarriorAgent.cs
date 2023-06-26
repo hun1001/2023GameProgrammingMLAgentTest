@@ -94,6 +94,11 @@ public class KnightWarriorAgent : Agent
             _inputController.OnAttackInput();
         }
 
-        AddReward(-0.01f);
+        AddReward(Vector3.Distance(transform.position, _otherPlayer.transform.position) * -0.1f);
+
+        if (1.5f <= Vector3.Distance(transform.position, _otherPlayer.transform.position))
+        {
+            AddReward(-2f);
+        }
     }
 }
